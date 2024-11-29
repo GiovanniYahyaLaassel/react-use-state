@@ -1,13 +1,26 @@
 import { useState } from 'react'
 import './App.css'
+import languages from './Data/languages'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeLanguage, setActiveLanguage] = useState('HTML')  
+
+  // console.log('Stato attivo:', activeLanguage);
+
+  // faccio un metodo map per creare i bottoni 
+  const buttons = languages.map((language) => {
+    // console.log('genero il bottone', language.title);
+    return (
+      <button key={language.id}>
+        {language.title}
+      </button>
+    );
+  });
 
   return (
     <>
     <div>
-      Hello world
+      <div>{buttons}</div>
     </div>
     </>
   )
