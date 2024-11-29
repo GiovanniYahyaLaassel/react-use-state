@@ -25,3 +25,24 @@ button.inactive {
   background-color: #f9f9f9;
   color:  #333;
 }
+
+/* stile della card  */
+.card{
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid  #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 22px;
+  color:  #007bff;
+}
+
+
+.card p{
+    font-size: 16px;
+    color: #333;
+}
+
