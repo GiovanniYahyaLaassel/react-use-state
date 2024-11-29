@@ -1,0 +1,27 @@
+/* contenitore per i button */
+.button-container{
+  display: flex;
+  gap: 8px;
+}
+
+button{
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* stile per i bottoni attivi */
+
+button.active{
+  border-color: #007bff;
+  background-color: #007bff;
+  color: rgb(231, 230, 230);
+}
+
+button.inactive {
+  background-color: #f9f9f9;
+  color:  #333;
+}

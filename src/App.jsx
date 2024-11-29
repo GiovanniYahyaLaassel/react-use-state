@@ -11,7 +11,12 @@ function App() {
   const buttons = languages.map((language) => {
     // console.log('genero il bottone', language.title);
     return (
-      <button key={language.id}>
+      <button 
+        key={language.id}
+        onClick={() => setActiveLanguage(language.title)}  //creo l'evento click 
+        // creo le classi per evidenziare il colore 
+        className={activeLanguage === language.title ? 'active' : 'inactive'}
+      >
         {language.title}
       </button>
     );
@@ -20,7 +25,7 @@ function App() {
   return (
     <>
     <div>
-      <div>{buttons}</div>
+      <div className='button-container'>{buttons}</div>
     </div>
     </>
   )
